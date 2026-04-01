@@ -72,7 +72,7 @@
       font-size: 90px;
     }
 
-    /* 会社概要レイアウト */
+    /* 会社概要 */
     .company-info {
       font-size: 30px;
       margin-bottom: 80px;
@@ -100,7 +100,7 @@
       line-height: 1.8;
     }
 
-    /* フッター（ホームと完全一致） */
+    /* フッター（統一） */
     footer {
       background: #222;
       color: #fff;
@@ -113,8 +113,10 @@
     .footer-info h3 { font-size: 20px; margin: 5px 0; }
     .footer-info p  { font-size: 12px; margin: 10px 0 0; }
 
-    /* スマホ縦画面対応（最重要） */
+    /* スマホ縦画面対応（ホームと完全一致） */
     @media screen and (max-width: 768px) {
+
+      .inner { width: 94%; max-width: 100%; }
 
       header .inner {
         flex-direction: column;
