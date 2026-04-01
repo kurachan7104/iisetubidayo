@@ -21,7 +21,7 @@
       margin: 0 auto;
     }
 
-    /* ヘッダー（ホームと完全一致） */
+    /* ヘッダー（統一） */
     header {
       position: sticky;
       top: 0;
@@ -91,7 +91,6 @@
       padding-left: 20px;
     }
 
-    /* 箇条書き */
     .gyomu-list {
       list-style: none;
       padding-left: 0;
@@ -100,7 +99,7 @@
       line-height: 1.8;
     }
 
-    /* フッター（統一） */
+    /* フッター */
     footer {
       background: #222;
       color: #fff;
@@ -113,9 +112,8 @@
     .footer-info h3 { font-size: 20px; margin: 5px 0; }
     .footer-info p  { font-size: 12px; margin: 10px 0 0; }
 
-    /* スマホ縦画面対応（ホームと完全一致） */
+    /* スマホ対応 */
     @media screen and (max-width: 768px) {
-
       .inner { width: 94%; max-width: 100%; }
 
       header .inner {
@@ -123,29 +121,15 @@
         align-items: flex-start;
       }
 
-      .logo {
-        font-size: 28px;
-      }
-      .logo-icon {
-        width: 60px;
-        height: 60px;
-      }
+      .logo { font-size: 28px; }
+      .logo-icon { width: 60px; height: 60px; }
 
-      nav {
-        margin-top: 5px;
-      }
-      nav a {
-        font-size: 18px;
-        margin-left: 10px;
-      }
+      nav { margin-top: 5px; }
+      nav a { font-size: 18px; margin-left: 10px; }
 
-      .page-title h2 {
-        font-size: 42px;
-      }
+      .page-title h2 { font-size: 42px; }
 
-      .company-info {
-        font-size: 20px;
-      }
+      .company-info { font-size: 20px; }
       .company-info div {
         display: block;
         margin-bottom: 25px;
@@ -154,13 +138,9 @@
         width: auto;
         margin-bottom: 5px;
       }
-      .company-info dd {
-        padding-left: 0;
-      }
+      .company-info dd { padding-left: 0; }
 
-      .gyomu-list {
-        font-size: 20px;
-      }
+      .gyomu-list { font-size: 20px; }
 
       .footer-info h1 { font-size: 22px; }
       .footer-info h2 { font-size: 16px; }
@@ -172,7 +152,6 @@
 
 <body>
 
-<!-- ヘッダー -->
 <header>
   <div class="inner">
     <div class="logo">
@@ -191,15 +170,14 @@
   </div>
 </header>
 
-<!-- タイトル -->
 <section class="page-title">
   <h2>会社概要</h2>
 </section>
 
-<!-- Googleマップ -->
+<!-- Googleマップ（正しいピン表示版） -->
 <div class="inner" style="margin-bottom: 60px;">
   <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.676097938755!2d140.168691!3d35.663650!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60228a0b3b4e0c8f%3A0x7c4e3c0e3c0e3c0e!2z5Y2D6JGJ55yM5Zub5bed5biC5Zub5bed5Yy65bKp44Gu44KJ44K544K_44O844Or!5e0!3m2!1sja!2sjp!4v1709030000000"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3857.2489732820104!2d140.17580397638173!3d35.67448847258935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60228586093a5825%3A0xe63e8683d2dfb11c!2z44CSMjg0LTAwMjYg5Y2D6JGJ55yM5Zub6KGX6YGT5biC44Gk44GP44GX5bqn77yS5LiB55uu77yS4oiS77yS!5e1!3m2!1sja!2sjp!4v1775045367611!5m2!1sja!2sjp"
     width="100%"
     height="350"
     style="border:0; border-radius: 10px;"
@@ -209,7 +187,6 @@
   </iframe>
 </div>
 
-<!-- 会社概要 -->
 <section class="inner company-info">
 
   <div><dt>会　社　名</dt><dd>株式会社 井伊設備</dd></div>
@@ -239,7 +216,6 @@
 
 </section>
 
-<!-- フッター -->
 <footer>
   <div class="inner footer-info">
     <h1>☎ 電話番号：043 - 312 - 3429</h1>
