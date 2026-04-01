@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>株式会社 井伊設備 ｜ お問合わせ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon2.png" type="image/png">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .inner {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* ヘッダー */
+    header {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      border-bottom: 1px solid #eee;
+      z-index: 10;
+    }
+    header .inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 50px;
+      font-family: "HGP行書体", "HG行書体", serif;
+      font-weight: bold;
+    }
+    .logo-icon {
+      width: 100px;
+      height: 100px;
+    }
+    .logo a {
+      color: inherit;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-size: 25px;
+      font-family: "HGP行書体", "HG行書体", serif;
+    }
+
+    /* ページタイトル */
+    .page-title {
+      text-align: center;
+      padding: 50px 0 40px;
+      font-family: "HGP行書体", "HG行書体", serif;
+      color: #004D24;
+    }
+    .page-title h2 {
+      font-size: 90px;
+    }
+
+    /* フォーム */
+    form {
+      font-size: 28px;
+      margin-bottom: 80px;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 15px;
+      font-size: 22px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      margin-bottom: 25px;
+    }
+    textarea {
+      height: 200px;
+      resize: vertical;
+    }
+    button {
+      background: #004D24;
+      color: #fff;
+      font-size: 28px;
+      padding: 12px 40px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      opacity: 0.8;
+    }
+
+    /* フッター */
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 30px 0;
+      line-height: 1.8;
+    }
+    .footer-info h1 { font-size: 42px; margin: 5px 0; }
+    .footer-info h2 { font-size: 20px; margin: 5px 0; }
+    .footer-info h3 { font-size: 20px; margin: 5px 0; }
+    .footer-info p  { font-size: 12px; margin: 10px 0 0; }
+
+/* スマホ対応（幅768px以下） */
+@media screen and (max-width: 768px) {
+  .inner { width: 94%; max-width: 100%; }
+
+  .logo { font-size: 28px; }
+  .logo-icon { width: 60px; height: 60px; }
+
+  nav a { font-size: 18px; margin-left: 10px; }
+
+  .page-title h2 { font-size: 42px; }
+
+  .main-visual h2 { font-size: 48px; }
+  .main-visual p { font-size: 22px; }
+
+  .company-info,
+  .service p,
+  .strength p { font-size: 20px; }
+
+  .service h3,
+  .strength h3 { font-size: 28px; }
+
+  .footer-info h1 { font-size: 22px; }
+  .footer-info h2 { font-size: 16px; }
+  .footer-info h3 { font-size: 16px; }
+  .footer-info p  { font-size: 10px; }
+
+  form { font-size: 20px; }
+  input, textarea { font-size: 18px; padding: 12px; }
+  button { font-size: 20px; padding: 10px 30px; }
+}
+
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+  <div class="inner">
+    <div class="logo">
+      <a href="index.html">
+        <img src="favicon2.png" alt="ロゴ" class="logo-icon">
+        株式会社 井伊設備
+      </a>
+    </div>
+
+    <nav>
+      <a href="company.html">会社概要</a>
+      <a href="service.html">事業内容</a>
+      <a href="strength.html">強み</a>
+      <a href="contact.html">お問合わせ</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-title">
+  <h2>お問合わせ</h2>
+</section>
+
+<section class="inner">
+
+  <!-- formsubmit を使ったメール送信フォーム -->
+<form action="https://formsubmit.co/ii-setubi@outlook.jp" method="POST">
+
+  <!-- スパム防止 -->
+  <input type="hidden" name="_captcha" value="false">
+
+  <!-- 完了後の遷移先（GitHub Pages の絶対URL） -->
+  <input type="hidden" name="_next" value="thanks.html">
+
+  <label>お名前</label>
+  <input type="text" name="お名前" required>
+
+  <label>メールアドレス</label>
+  <input type="email" name="メールアドレス" required>
+
+  <label>電話番号（任意）</label>
+  <input type="text" name="電話番号">
+
+  <label>お問合わせ内容</label>
+  <textarea name="お問合わせ内容" required></textarea>
+
+  <button type="submit">送信する</button>
+</form>
+
+</section>
+
+<footer>
+  <div class="inner footer-info">
+    <h1>☎ 電話番号：043 - 312 - 3429</h1>
+    <h2>FAX 番号：043 - 312 - 9096</h2>
+    <h3>Email：ii-setubi@outlook.jp</h3>
+    <h3>〒284-0026 千葉県四街道市つくし座２-２-２</h3>
+    <p>株式会社 井伊設備　©Ii Setsubi Co., Ltd.</p>
+  </div>
+</footer>
+
+</body>
+</html>
